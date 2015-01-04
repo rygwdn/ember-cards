@@ -1,0 +1,30 @@
+@import 'foundation'; /* import everything */
+/* or just import the bits you need: @import 'foundation/functions'; */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+$card-width: 200px;
+$card-height: $card-width * (4/3);
+$card-color: #B05000;
+
+html, body {
+  margin: 20px;
+}
+
+.card {
+  @include border-radius(10px);
+  border-style: solid;
+  border-width: 3px;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  border-color: #000;
+  background-color: $card-color;
+  width: $card-width;
+  height: $card-height;
+}

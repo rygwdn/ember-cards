@@ -1,3 +1,18 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
+<div id='shared' class='front'>
+    {{base-card title="A Shared Card"}}
+    {{base-card title="B Shared Card"}}
+</div>
+
+<div id='in-play' class='front'>
+    {{base-card title="A Front Card"}}
+    {{base-card title="B Front Card"}}
+</div>
+
+<div id='hand' class='hand'>
+    {{base-card title="A Hand Card"}}
+    {{base-card title="B Hand Card"}}
+</div>
+
 {{outlet}}
