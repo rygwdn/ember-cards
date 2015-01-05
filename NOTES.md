@@ -16,7 +16,10 @@
 
 # possible dnd libs
 
+- [awesome](http://tympanus.net/Development/DragDropInteractions/index.html) ([src](https://github.com/codrops/DragDropInteractions) - uses graggabilly)
+
 - [plain html5](http://nepalonrails.com/blog/2014/02/drag-and-drop-with-emberjs)
   ([alt](http://stackoverflow.com/questions/10739322/dragdrop-with-ember-js))
-- [draggabilly](http://draggabilly.desandro.com/)
 - make it [sortable](https://github.com/KirillSuhodolov/ember-drag-and-drop-sortable)
+- [draggabilly](http://draggabilly.desandro.com/)
+- [interact](http://interactjs.io/)
