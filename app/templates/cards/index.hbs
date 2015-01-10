@@ -1,0 +1,7 @@
+<h1>Cards Index</h1>
+<h2>Total cards: {{model.length}}</h2>
+<ul>
+    {{#each card in model}}
+        <li>{{base-card name=card.name}}</li>
+    {{/each}}
+</ul>
