@@ -5,10 +5,10 @@
 - [ember-cli](http://www.ember-cli.com/)
 - [use ES6](https://github.com/lukehoban/es6features#arrows)
 
+[foundation](http://foundation.zurb.com/docs/components/kitchen_sink.html#)
 
 # possible addons
 
-- [sass](https://www.npmjs.com/package/ember-cli-sass)
 - [liquid-fire](https://www.npmjs.com/package/liquid-fire) (animations)
 - [ember-fire](https://www.npmjs.com/package/emberfire) (firebase)
 - [ember-polymer](https://www.npmjs.com/package/ember-polymer)
@@ -23,3 +23,7 @@
 - make it [sortable](https://github.com/KirillSuhodolov/ember-drag-and-drop-sortable)
 - [draggabilly](http://draggabilly.desandro.com/)
 - [interact](http://interactjs.io/)
+
+# snippets
+
+$E.store.findAll("card").then(function(cards) {cards.forEach(function(card) { console.log("Hi from: " + card.get("name")); })})
