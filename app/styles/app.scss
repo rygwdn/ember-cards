@@ -16,6 +16,29 @@ html, body {
   margin: 20px;
 }
 
+.front {
+  @include border-radius(10px);
+  overflow: auto;
+  border-style: solid;
+  border-width: 3px;
+  padding: 10px;
+  margin: 10px;
+  border-color: #000;
+
+  &.drop-feedback {
+    background-color: red;
+  }
+
+  &.highlight {
+    background-color: blue;
+  }
+}
+
+
+.is-active {
+  z-index: 100;
+}
+
 .card {
   @include border-radius(10px);
   border-style: solid;
