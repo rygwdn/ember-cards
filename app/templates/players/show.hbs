@@ -1,0 +1,43 @@
+<div class="row left">
+{{#link-to "players.index"}}
+    <div class="button">
+        Back to Players
+    </div>
+{{/link-to}}
+</div>
+
+<div class="row left">
+    <div class="small-8 columns left">
+        <div class="row">
+            <div class="small-3 columns">
+                <div class='right'>Name:</div>
+            </div>
+            <div class="small-9 columns">
+                {{model.name}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-3 columns">
+                <div class='right'>Email:</div>
+            </div>
+            <div class="small-9 columns">
+                {{model.email}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns right small-12">
+                <ul class="button-group round odd-3">
+                    <li>{{link-to "Edit" "players.edit" model class='button'}}</li>
+                    <li><button {{action "delete" model}}>Delete</button></li>
+                    <li><button {{action "cancel"}}>Cancel</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<ul>
+    <li>{{link-to "Edit" "players.edit" model}}</li>
+</ul>
+-->

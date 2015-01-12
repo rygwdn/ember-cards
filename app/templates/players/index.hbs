@@ -1,8 +1,23 @@
 <h1>Players!</h1>
 <h2>Total players: {{model.length}}</h2>
 
-<ul>
-    {{#each player in model}}
-        <li>{{player.name}}</li>
-    {{/each}}
-</ul>
+<div class="row left">
+    <div class="small-8 columns left">
+        {{#each player in model}}
+            <div class="row">
+                <div class="small-8 columns">
+                    {{link-to player.display 'players.show' player}}
+                </div>
+                <div class="small-2 columns">
+                    {{link-to "Edit" "players.edit" player}}
+                </div>
+                <div class="small-2 columns">
+                    <a href="#" {{action "delete" player}}>Delete</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+<div class="row left">
+    {{link-to "New" "players.new" class='button'}}
+</div>
